@@ -12,7 +12,7 @@ const LandingPageContext = () => {
     const [change, setChange] = useState('')
     const [data, setData] = useState([])
 
-    let OrderedList = db.zodiac_signs.sort(((a, b) => {
+    let OrderedDatabase = db.zodiac_signs.sort(((a, b) => {
         if (a.name > b.name) {
           return 1;
         }
@@ -23,8 +23,8 @@ const LandingPageContext = () => {
       }))
 
     useEffect(() => {
-        setData(OrderedList)
-    }, [OrderedList])
+        setData(OrderedDatabase)
+    }, [OrderedDatabase])
 
     const searchingValue = (value) => {
         return function(x){
