@@ -19,7 +19,7 @@ const ComunHeader = () => {
                     {/* <Link className='header-content' smooth to='#home'>Inicio</Link> */}
                     <Link className='header-content' smooth to='#aboutUs'>Conocenos</Link>
                     <Link className='header-content' smooth to='#benefits'>Beneficios</Link>
-                    <div className='header-login'>Login</div>
+                    <Link className='header-content'to='/register'><div className='header-login'>Registrate</div></Link>
                 </div>
             </div>
         </div>
