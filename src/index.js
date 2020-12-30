@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LandingPageContext from './components/LandingPageContext'
+import LandingPageContext from './components/page/LandingPageContext'
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <LandingPageContext />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
