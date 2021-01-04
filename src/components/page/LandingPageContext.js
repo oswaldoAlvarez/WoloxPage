@@ -14,6 +14,7 @@ import '../../styles/landingPage.scss';
 const LandingPageContext = () => {
     const dispatch = useDispatch();
 
+    /*con esta función asincrona traeremos los datos de todas las tecnologías*/
     const apiFetchInfo = async() => {
         let setEndpoint = urlAllTechs;
         await axios.get(setEndpoint)
